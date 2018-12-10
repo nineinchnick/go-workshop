@@ -17,7 +17,15 @@ func (realClock) now() time.Time {
 
 func isFriday(c clock) bool {
 	weekday := c.now().Weekday()
+	if !isRealClock(c) {
+		fmt.Println("Warning! Not using a realClock")
+	}
 	return weekday == time.Friday
+}
+
+func isRealClock(c interface{}) bool {
+	_, ok := c.(*realClock)
+	return ok
 }
 
 func main() {
