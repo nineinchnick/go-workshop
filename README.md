@@ -20,12 +20,12 @@ author: Jan Waś
 * arrays and slices
 * maps
 * methods
-* interfaces
 
 # Not on agenda
 
 Mid level
 
+* interfaces
 * goroutines
 * channels
 * error handling
@@ -200,14 +200,13 @@ cat 01-vars/main.go
 
 # methods
 
-# interfaces
-
 # Links
 
 From https://golang.org/doc/:
 * https://tour.golang.org/welcome/1
 * https://golang.org/doc/effective_go.html
 * https://golang.org/doc/faq
+* https://gobyexample.com
 
 Others:
 * https://blog.golang.org/package-names
