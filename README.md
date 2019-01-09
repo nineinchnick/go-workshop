@@ -5,9 +5,14 @@ author: Jan Waś
 
 # Agenda
 
+Estimated time: 4x3 hours over 2 days
+
 * quick poll
 * intro
 * installing go, directories overview
+
+Basics
+
 * packaging
 * go get, go build, go install
 * fmt, imports, linter
@@ -21,9 +26,7 @@ author: Jan Waś
 * maps
 * methods
 
-# Not on agenda
-
-Mid level
+# Mid level
 
 * interfaces
 * goroutines
@@ -32,9 +35,7 @@ Mid level
 * (file) io
 * unit tests
 
-# Not on agenda 2
-
-Advanced (not really):
+# Advanced (not really)
 
 * stdlib
 * ide: AC, def/usage, debug
@@ -46,6 +47,18 @@ Advanced (not really):
 * parsing cli args
 * db access
 * logging
+
+# Requirements
+
+Bring a laptop!
+
+Go through:
+* https://tour.golang.org/welcome/1
+* https://gobyexample.com
+
+Setup Go env to be able to compile and run programs. See the [Install](#Install Go) section.
+
+Prepare your favourite text editor/IDE.
 
 # Poll
 
@@ -204,12 +217,22 @@ cat 01-vars/main.go
 
 From https://golang.org/doc/:
 * https://tour.golang.org/welcome/1
+* https://gobyexample.com
 * https://golang.org/doc/effective_go.html
 * https://golang.org/doc/faq
-* https://gobyexample.com
 
 Others:
 * https://blog.golang.org/package-names
 * https://github.com/kelseyhightower/intro-to-go-workshop
 * https://www.youtube.com/watch?v=ndmB0bj7eyw
 
+# Exit poll
+
+* how was the instructor prepared?
+* was the instructor helpful and making sure everyone keeps on track?
+* pace
+* scope
+* duration
+* rate this examples
+* open questions: what did you like, what to improve
+* rate the venue
