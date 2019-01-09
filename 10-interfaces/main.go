@@ -11,7 +11,7 @@ type clock interface {
 
 type realClock struct{}
 
-func (realClock) now() time.Time {
+func (r realClock) now() time.Time {
 	return time.Now()
 }
 

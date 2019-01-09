@@ -16,10 +16,10 @@ func (f *fakeClock) now() time.Time {
 func TestIsFridaySuccess(t *testing.T) {
 	// Arrange
 	date := time.Date(2018, 12, 11, 0, 0, 0, 0, time.UTC)
-	clock := fakeClock{date}
+	c := fakeClock{date}
 
 	// Act
-	result := isFriday(&clock)
+	result := isFriday(&c)
 
 	// Assert
 	if result {
@@ -30,10 +30,10 @@ func TestIsFridaySuccess(t *testing.T) {
 func TestIsFridayFail(t *testing.T) {
 	// Arrange
 	date := time.Date(2018, 12, 14, 0, 0, 0, 0, time.UTC)
-	clock := fakeClock{date}
+	c := fakeClock{date}
 
 	// Act
-	result := isFriday(&clock)
+	result := isFriday(&c)
 
 	// Assert
 	if !result {

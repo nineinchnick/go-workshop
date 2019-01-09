@@ -8,6 +8,7 @@ type point struct {
 
 func main() {
 	var m map[string]point
+	m = make(map[string]point)
 	fmt.Printf("empty m: %#v\n", m)
 
 	m["start"] = point{0, 0}
@@ -20,6 +21,17 @@ func main() {
 		"middleearth":     {1, 1},
 		"other end":       {2, 3},
 	}
+
+	type namedPoint struct {
+		name string
+		val  point
+	}
+
+	ordered := []namedPoint{
+		{name: "different start", val: point{-1, -5}},
+	}
+	// sort.Sort() can now be used
+	fmt.Println(ordered)
 
 	// iterate
 	for k, v := range m {
